@@ -4,7 +4,7 @@ echo
 echo installing golang version $GO_INSTALLER
 echo NB: any problems, try to move folder /usr/local/go and examine ~/.profile
 echo
-read -p "Press enter to continue"
+#read -p "Press enter to continue"
 
 echo 
 echo install go $GO_INSTALLER
