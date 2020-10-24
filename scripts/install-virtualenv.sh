@@ -6,7 +6,7 @@ echo
 echo the new virtualenv will be installed below here:
 echo $(pwd)
 echo 
-read -p "Think twice. Then press enter to continue"
+#read -p "Think twice. Then press enter to continue"
 echo
 
 set -x
