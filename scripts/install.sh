@@ -51,7 +51,7 @@ echo
 echo Is this the \"chainhammer\" folder where you want everything installed?
 echo $(pwd)
 echo
-read -p "Press enter to continue"
+#read -p "Press enter to continue"
 echo
 echo must install some tools on system level, please input your sudo password:
 sudo ls scripts/install-*.sh
@@ -83,7 +83,7 @@ install_chapter scripts/install-solc.sh
 install_chapter scripts/install-go.sh
 
 # geth
-install_chapter scripts/install-geth.sh
+#install_chapter scripts/install-geth.sh
 
 # env
 install_chapter scripts/install-virtualenv.sh
