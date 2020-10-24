@@ -4,7 +4,7 @@ INSTALLPATH=/usr/local/bin
 echo
 echo install solidity compiler solc into $INSTALLPATH/ 
 echo 
-read -p "Press enter to continue"
+#read -p "Press enter to continue"
 
 # someone should PLEASE create a Debian specific installation routine
 # see https://solidity.readthedocs.io/en/latest/installing-solidity.html 
