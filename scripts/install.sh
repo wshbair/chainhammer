@@ -82,13 +82,14 @@ install_chapter scripts/install-solc.sh
 # go
 install_chapter scripts/install-go.sh
 
-# geth
+# Wazen: no need
+# geth 
 #install_chapter scripts/install-geth.sh
 
 # env
 install_chapter scripts/install-virtualenv.sh
 
-# deploy.py andtests on testRPC
+# deploy.py and tests on testRPC
 install_chapter scripts/install-initialize.sh
 
 
