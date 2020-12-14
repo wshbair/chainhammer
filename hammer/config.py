@@ -106,7 +106,7 @@ FILE_LAST_EXPERIMENT = "last-experiment.json"
 AUTOSTOP_TPS = True
 
 # after last txs have been mined, give 10 more blocks before experiment ends
-EMPTY_BLOCKS_AT_END = 10
+EMPTY_BLOCKS_AT_END = 0
 
 # DB file for traversing all blocks
 DBFILE="allblocks.db"
