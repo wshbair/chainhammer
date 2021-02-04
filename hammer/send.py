@@ -37,10 +37,14 @@ from hammer.config import FILE_LAST_EXPERIMENT, EMPTY_BLOCKS_AT_END
 from hammer.deploy import loadFromDisk
 from hammer.clienttools import web3connection, unlockAccount
 
+import subprocess,shlex
 
 ##########################
 ## smart contract related:
-
+var1=os.getpid()
+print('parent process id:%d' %(os.getppid()))
+cmd = 'bash process-metrics-collector.sh {}'.format(var1)
+subprocess.Popen(shlex.split(cmd))
 
 def initialize_fromAddress():
     """
