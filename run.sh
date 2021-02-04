@@ -4,6 +4,7 @@ INFOFILE=hammer/last-experiment.json
 TPSLOG=logs/tps.py.log
 DEPLOYLOG=logs/deploy.py.log
 SENDLOG=logs/send.py.log
+blocksDB_diagrammingLOG=logs/blocksDB_diagramming.py.log
 
 if [ -z "$CH_TXS" ] || [ -z "$CH_THREADING" ]; then 
     echo "You must set 2 ENV variables, examples:"
@@ -105,6 +106,7 @@ echo
 
 ./send.py $CH_TXS $CH_THREADING > "../$SENDLOG"
 
+
 echo
 
 title "sleep 2"
@@ -123,6 +125,9 @@ echo
 title blocksDB_diagramming.py
 echo make time series diagrams from SQL db
 ./blocksDB_diagramming.py $DBFILE $INFOWORD ../$INFOFILE
+./blocksDB_diagramming.py >"$blocksDB_diagrammingLOG"
+
+
 echo 
 
 title page_generator.py
