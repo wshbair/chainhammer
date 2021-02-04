@@ -85,7 +85,7 @@ GAS_FOR_SET_CALL = 90000
 # set this to a list of public keys for privateFor-transactions,
 # or to None for public transactions
 PRIVATE_FOR = ["ROAZBWtSacxXQrOe3FGAqJDyJjFePR5ce4TSIzmJ0Bc="]
-PRIVATE_FOR = None
+#PRIVATE_FOR = None
 
 # contract 7nodes example (probably this is 'SimpleStorage.sol'?)
 EXAMPLE_ABI = [{"constant":True,"inputs":[],"name":"storedData","outputs":[{"name":"","type":"uint256"}],"payable":False,"type":"function"},{"constant":False,"inputs":[{"name":"x","type":"uint256"}],"name":"set","outputs":[],"payable":False,"type":"function"},{"constant":True,"inputs":[],"name":"get","outputs":[{"name":"retVal","type":"uint256"}],"payable":False,"type":"function"},{"inputs":[{"name":"initVal","type":"uint256"}],"type":"constructor"}];
