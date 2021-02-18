@@ -17,7 +17,7 @@ if __name__ == '__main__' and __package__ is None:
 ## Dependencies:
 
 # standard library:
-import sys, time, random, json
+import sys, time, random, json, os
 from threading import Thread
 from queue import Queue
 from pprint import pprint
